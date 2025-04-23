@@ -2,3 +2,13 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "PaperMod"
+
+# [pagination]
+#   pagerSize = 6  # 首页文章每页展示数量
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
