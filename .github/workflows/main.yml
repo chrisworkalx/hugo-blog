@@ -12,14 +12,22 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
+        with:
+          submodules: true # 下载子模块
+          fetch-depth: 1 # 只下载最近一次的提交记录
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"
+          hugo-version: "0.146.7"
+          extended: true
+
+      - name: install hugo mode
+        run: hugo mod get
 
       - name: Build Hugo site
-        run: hugo --minify
+        run: hugo --minify -—buildDrafts
+
       - name: List public directory
         run: |
           echo "📁 Listing contents of public/"
