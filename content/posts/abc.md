@@ -12,4 +12,4 @@ featured: true
 featured_image: "/images/kenan.jpg"
 ---
 
-这是我的第一篇博客文章，记录了我使用 Hugo 搭建博客的过程。
+这是我的第一篇博客文章，记录了我使用 Hugo 搭建博客的过程。22222
