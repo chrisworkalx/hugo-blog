@@ -20,6 +20,10 @@ jobs:
 
       - name: Build Hugo site
         run: hugo --minify
+      - name: List public directory
+        run: |
+          echo "📁 Listing contents of public/"
+          ls -la public
 
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1.2.0
