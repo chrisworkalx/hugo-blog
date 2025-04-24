@@ -10,6 +10,7 @@ description: "这是我用 Hugo 搭建博客的第一篇文章，记录启动全
 slug: "abc"
 featured: true
 featured_image: "/images/kenan.jpg"
+comments: true
 ---
 
 这是我的第一篇博客文章，记录了我使用 Hugo 搭建博客的过程。22222

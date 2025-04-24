@@ -1,0 +1,20 @@
+{{ if .Params.comments }}
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css"
+/>
+<div id="waline">33333</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js"></script> -->
+<script type="module">
+  import { init } from "https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js";
+
+  init({
+    el: "#waline",
+    serverURL: "{{ .Site.Params.waline.serverURL }}", // 替换成你的实际地址
+    lang: "zh-CN",
+    emoji: ["https://unpkg.com/@waline/emojis@1.1.0/weibo"],
+    pageSize: 10,
+    dark: localStorage.theme === "dark",
+  });
+</script>
+{{ end }}
