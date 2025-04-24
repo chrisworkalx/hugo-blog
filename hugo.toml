@@ -1,6 +1,6 @@
 baseURL = 'https://blog.chrisworkalx.top/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Hi, I am Chris'
 theme = "PaperMod"
 
 [pagination]
@@ -19,7 +19,7 @@ theme = "PaperMod"
 
 [params.waline]
   enable = true
-  serverURL = "https://waline-demo-sigma.vercel.app"  # 替换成你的 Waline 部署地址
+  serverURL = "https://waline-demo-sigma.vercel.app/"  # 替换成你的 Waline 部署地址
 
 
 [[menu.main]]
